@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Arizonia&family=Charmonman:wght@400;700&family=Dancing+Script:wght@400;600;700&family=Monoton&family=Mr+Dafoe&family=Mrs+Saint+Delafield&family=Open+Sans:wght@300;400;500;600;700;800& family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap& family=Roboto:wght@400;500;700;900&family=Sofia+Sans:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    /* background-color: #43AFFC; */
+    background: linear-gradient(to top, #43AFFC, #2B3467, #43AFFC);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    font-family: Charmonman, open sans;
+    letter-spacing: -2px;
+    font-size: 40px;
+    font-weight: 700;
+    color: rgb(225, 20, 20);
+    margin: 10px 0px 0px 20px;
+}
+
+.wrapper {
+    width: 400px;
+    border-radius: 7px;
+    background: #fff;
+    border: 2px solid #2C3333;
+}
+
+.wrapper header {
+    color: #43AFFC;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #bfbfbf;
+}
+
+header i {
+    cursor: pointer;
+    font-style: 0px;
+    margin-right: 8px;
+}
+
+.wrapper.active header i {
+    font-style: 30px;
+    margin-left: 5px;
+}
+
+.wrapper .input-part {
+    margin: 20px 25px 30px;
+}
+
+.wrapper.active .input-part {
+    display: none;
+}
+
+.input-part .info-txt {
+    display: none;
+    font-style: 18px;
+    text-align: center;
+    padding: 12px 10px;
+    border-radius: 7px;
+    margin-bottom: 15px;
+}
+
+.info-txt.error {
+    display: block;
+    color: #721c24 !important;
+    background: #f8d7da !important;
+    border: 1px solid #f5c6cb;
+    border: 2px solid #2C3333;
+}
+
+.info-txt.pending {
+    display: block;
+    color: #0c5460;
+    background: #d1ecf1;
+    border: 1px solid #bee5eb;
+    border: 2px solid #2C3333;
+}
+
+.input-part :where(input, button) {
+    width: 100%;
+    height: 50px;
+    border: none;
+    outline: none;
+    font-style: 18px;
+    border-radius: 7px;
+}
+
+.input-part input {
+    text-align: center;
+    border: 2px solid #146C94;
+}
+
+.input-part input:is(:focus, :valid) {
+    border: 2px solid #43AFFC;
+    /* border: 2px solid #2C3333; */
+}
+
+.input-part .separator {
+    height: 1px;
+    width: 100%;
+    margin: 25px 0;
+    background: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.separator::before {
+    content: "or";
+    color: #ccc;
+    font-style: 19px;
+    padding: 0px 15px;
+    background: #fff;
+}
+
+.input-part button {
+    color: #fff;
+    cursor: pointer;
+    background: #43AFFC;
+    border: 2px solid #2C3333;
+}
+
+.wrapper .weather-part {
+    margin: 20px 0 0;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper.active .weather-part {
+    display: flex;
+}
+
+.weather-part img {
+    max-width: 125px;
+}
+
+.weather-part .temp {
+    display: flex;
+    font-size: 72px;
+    font-weight: 500;
+}
+
+.weather-part .temp .numb {
+    font-weight: 600;
+}
+
+.weather-part .temp .deg {
+    font-size: 40px;
+    margin: 10px 5px 0 0;
+    display: block;
+}
+
+.weather-part .weather {
+    font-size: 21px;
+    text-align: center;
+    margin: 15px 0px 15px;
+}
+
+.weather-part .location {
+    display: flex;
+    align-items: center;
+    font-size: 21px;
+    margin: 20px 0 30px 0;
+}
+
+.location i {
+    font-size: 22px;
+    margin-right: 5px;
+}
+
+.weather-part .bottom-details {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #bfbfbf;
+}
+
+.bottom-details .column {
+    width: 100%;
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.column i {
+    color: #43AFFC;
+    font-size: 40px;
+}
+
+.humidity {
+    border-left: 1px solid #bfbfbf;
+}
+
+.details .temp,
+.humidity span {
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: -3px;
+}
+
+.details .temp .deg {
+    margin: 0;
+    font-size: 17px;
+    padding: 0px 2px 0px 1px;
+}
+
+.details .p {
+    font-size: 14px;
+    margin-top: -6px;
+}
