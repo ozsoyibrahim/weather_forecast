@@ -4,6 +4,6 @@
 
 <h5>This work cointains HTML, CSS and Javascript codes.</h5>
 
-<h3>Please <a href="#"> <b>CLICK</b></a> to visit website.</h3>
+<h3>Please <a href="https://ozsoyibrahim.github.io/weather_forecast/index.html"> <b>CLICK</b></a> to visit website.</h3>
 
 <img src="icons/screen.gif" alt="">
