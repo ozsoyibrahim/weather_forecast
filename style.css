@@ -51,6 +51,13 @@ header i {
     margin-right: 8px;
 }
 
+header a {
+    cursor: pointer;
+    text-decoration: none;
+    margin-right: 8px;
+    color: #43AFFC;
+}
+
 .wrapper.active header i {
     font-style: 30px;
     margin-left: 5px;
